@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page with Images</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main-title">I'm Back!</h1>
+        <p>Hi! My Name is Jaquidel Dulnuan</p>
+        <img src="https://a.storyblok.com/f/191576/1200x800/215e59568f/round_profil_picture_after_.webp">
+
+        <h2>Class Expectations</h2>
+        <p>Social Skills and Communication.</p>
+        <p>Academic Integrity and Respect.</p>
+
+        <h2>Subject Expectations</h2>
+        <p>Practical skills development</p>
+        <p>The ability to apply knowledge to real-world scenarios</p>
+
+        <h2>Future PHP Projects</h2>
+        <ul>
+            <p>Attendance Management System</p>
+            <p>Inventory Management System</p>
+            <p>Complaint Management System</p>
+        </ul>
+    </div>
+
+    <button id="changeBgBtn">Change Background</button>
+    
+    <script>
+        const gifs = [
+         "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgraphicmama.com%2Fanimated-gif%2Fcute-panda-animated-gifs-collection&psig=AOvVaw0YVtRTKUsj3fd8ke1y54yX&ust=1755245624691000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID1wcztiY8DFQAAAAAdAAAAABAE",
+         ""
+        ];
+
+        let current = 0;
+
+        document.getElementById('changeBgBtn').onclick = function() {
+            document.body.style.backgroundImage = `url('${gifs[current]}')`;
+            current = (current + 1) % gifs.length;
+        };
+    </script>
+
+</body>
+</html>
+
